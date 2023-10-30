@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'javascript-learnings';
+
+  public jslearnFlag: boolean = true;
+
+  jslearn(){
+    this.jslearnFlag=true;
+  }
+
+  interview(){
+    this.jslearnFlag=false
+  }
 }
