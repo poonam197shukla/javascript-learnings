@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="jslearn()">JAVASCRIPT NOTES</button>
+    <button mat-raised-button color="primary" (click)="interview()">INTERVIEW QUESTIONS</button>
+  </div>
+  
+  
+  
+  <!--Notes of javascript-->
+  <div *ngIf="jslearnFlag; else interviewques" class="js-learning">
+  <ol>
+    <li class="list-item">Execution Context </li>
+    <img src="../assets/images/execution_context.png">
+    <li class="list-item">Javascript code exection flow - Memory creation phase & Code exection phase</li>
+    <img src="../assets/images/js_execution.png" alt="">
+    <li class="list-item">Call satck in exection Context</li>
+    <img src="../assets/images/call_stack.png" alt="">
+  </ol>
+  </div>
+
+  <ng-template #interviewques>
+    <div  class="js-learning">
+      this has interview questions
+    </div>
+  </ng-template>
+</div>
+
+
+
+
